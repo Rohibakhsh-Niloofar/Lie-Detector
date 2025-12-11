@@ -18,7 +18,7 @@ void setup()
 
 void loop()
 {
-  if (analogRead(A0) > 60)
+  if (analogRead(A1) > 60)
   {
     digitalWrite(4,High);
   }
@@ -27,7 +27,7 @@ void loop()
     digitalWrite(4,Low);
   }
 
-  if (analogRead(A0) > 20)
+  if (analogRead(A1) > 20)
   {
     digitalWrite(2,High);
   }
@@ -36,7 +36,7 @@ void loop()
     digitalWrite(2,Low);
   }
 
-  if (anologread(A0) > 45)
+  if (anologread(A1) > 45)
   {
     digitalWrite(3,High);
   }
@@ -46,7 +46,7 @@ void loop()
   }
 
 
-  Serial.println(analogRead(A0));
+  Serial.println(analogRead(A1));
   delay(20);
 }
 
